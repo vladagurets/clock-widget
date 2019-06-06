@@ -25,8 +25,8 @@ To add clock to yor app run ClockWidget with prefered options:
 ###### Example
 ```javascript
 const clock = ClockWidget({
-  countdown: false, // countdown mode
-  draggable: false, // make clock draggable
+  countdown: false,
+  draggable: false,
   hMirrored: false,
   vMirrored: false,
   date: new Date("December 17, 1995 03:24:00"),
