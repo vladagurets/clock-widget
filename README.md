@@ -3,6 +3,9 @@ This lib allows you to add simple clock widget to your app.
 
 ZERO dependency.
 
+### Example
+**https://vladagurets.github.io/clock-widget-example/**
+
 ### Features
 - Simple clock
 - Draggable clock
