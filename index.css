@@ -1,0 +1,25 @@
+#clockwidget-wrapper {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: none;
+  z-index: 1;
+}
+#clockwidget-wrapper svg {fill: rgb(238, 238, 238); stroke-linecap: round; stroke: black;}
+#clockwidget-wrapper.-draggable { cursor: grab;}
+#clockwidget-wrapper.-dragging { cursor: grabbing;}
+#clockwidget {stroke: black; stroke-linecap: round; fill: #eef;}
+#clockwidget-circle {stroke-width: 3px;}
+#clockwidget-ticks {stroke-width: 2;}
+#clockwidget-h-hand {stroke-width: 3px;}
+#clockwidget-m-hand {stroke-width: 2px;}
+#clockwidget-s-hand {stroke-width: 1px; stroke: rgb(125, 44, 44);}
+#clockwidget-numbers {
+  fill: black;
+  font-family: sans-serif;
+  font-size: 7pt;
+  font-weight: bold;
+  stroke: none;
+  text-anchor: middle;
+}
