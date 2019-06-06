@@ -1,8 +1,8 @@
 {
-  "name": "clock-widget",
+  "name": "clock-web-widget",
   "version": "1.0.0",
   "description": "Simple clock widget with zero dependency",
   "main": "index.js",
-  "author": "vladagurets <aguretsvlad@gmail.com>",
+  "author": "agurets <aguretsvlad@gmail.com>",
   "license": "MIT"
 }
