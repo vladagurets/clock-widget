@@ -1,6 +1,7 @@
 ## Simple Clock Widget
-ZERO dependency.
 This lib allows you to add simple clock widget to your app.
+
+ZERO dependency.
 
 ### Features
 - Simple clock
