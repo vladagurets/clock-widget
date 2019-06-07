@@ -1,8 +1,17 @@
 {
   "name": "clock-web-widget",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple clock widget with zero dependency",
   "main": "index.js",
-  "author": "agurets <aguretsvlad@gmail.com>",
-  "license": "MIT"
+  "author": "Vladyslav Ohirenko <aguretsvlad@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladagurets/clock-widget.git"
+  },
+  "keywords": [
+    "clock",
+    "widget",
+    "draggable"
+  ]
 }
