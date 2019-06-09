@@ -227,14 +227,14 @@
       minhand.setAttribute("transform", "rotate(" + minangle + ",50,50)");
       hourhand.setAttribute("transform", "rotate(" + hourangle + ",50,50)");
     }
-    // const appendStyles = () => {
-    //   const link = document.createElement("link");
-    //   link.href = "index.css";
-    //   link.type = "text/css";
-    //   link.rel = "stylesheet";
-    //   link.media = "screen,print";
-    //   document.body.appendChild(link);
-    // }
+    const appendStyles = () => {
+      const link = document.createElement("link");
+      link.href = "index.css";
+      link.type = "text/css";
+      link.rel = "stylesheet";
+      link.media = "screen,print";
+      document.body.appendChild(link);
+    }
     const addDragListeners = () => {
       let offset = [0,0];
       let isDown = false;
@@ -313,7 +313,7 @@
       applyOptions();
     }
     
-    // appendStyles();
+    appendStyles();
     drawClock();
     updateTime();
 
