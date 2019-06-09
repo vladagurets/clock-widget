@@ -100,7 +100,7 @@
    * | });
    */
   function ClockWidget (opts) {
-    const applyOptions = () => Object.keys(this.opts || {}).forEach(key => { this[key] = this.opts[key]; })
+    const applyOptions = () => Object.keys(this.opts).forEach(key => { this[key] = this.opts[key]; })
 
     this.opts = {
       countdown: false,
@@ -111,8 +111,8 @@
       soundOn: false,
       speed: 1,
       vMirrored: false,
-      ...opts
     }
+    Object.assign(this.opts, opts)
 
     this.date = opts.date instanceof Date ? opts.date : new Date();
     this.tickCount = 0;
@@ -227,14 +227,14 @@
       minhand.setAttribute("transform", "rotate(" + minangle + ",50,50)");
       hourhand.setAttribute("transform", "rotate(" + hourangle + ",50,50)");
     }
-    const appendStyles = () => {
-      const link = document.createElement("link");
-      link.href = "index.css";
-      link.type = "text/css";
-      link.rel = "stylesheet";
-      link.media = "screen,print";
-      document.body.appendChild(link);
-    }
+    // const appendStyles = () => {
+    //   const link = document.createElement("link");
+    //   link.href = "index.css";
+    //   link.type = "text/css";
+    //   link.rel = "stylesheet";
+    //   link.media = "screen,print";
+    //   document.body.appendChild(link);
+    // }
     const addDragListeners = () => {
       let offset = [0,0];
       let isDown = false;
@@ -292,7 +292,7 @@
 
       clock.style.transition = "width .5s, height .5s";
     }
-    this.updateClock = newOpts => {
+    this.update = newOpts => {
       Object.keys(newOpts).forEach(key => {
         const newOpt = newOpts[key];
   
@@ -313,7 +313,7 @@
       applyOptions();
     }
     
-    appendStyles();
+    // appendStyles();
     drawClock();
     updateTime();
 
@@ -331,7 +331,7 @@
     return {
       pause: clockTimer.pause,
       resume: clockTimer.resume,
-      updateClock
+      update: this.update
     }
   }
 

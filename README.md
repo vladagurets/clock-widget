@@ -27,6 +27,9 @@ To add clock to yor app run ClockWidget with prefered options:
 #### Initialization
 ###### Example
 ```javascript
+import ClockWidget = 'clock-web-widget';
+import 'clock-web-widget/index.css';
+
 const clock = ClockWidget({
   countdown: false,
   draggable: false,
@@ -48,7 +51,7 @@ closk.resume();
 #### Overriding configs
 ###### Example
 ```javascript
-clock.updateClock({
+clock.update({
   speed: 300,
   draggable: true,
   size: 'large'
